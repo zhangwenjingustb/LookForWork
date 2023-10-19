@@ -41,6 +41,31 @@ logit函数：对数几率函数
 几何间隔就是函数间隔除以||w||，而且函数间隔y*(wx+b) = y*f(x)实际上就是|f(x)|，只是人为定义的一个间隔度量，而几何间隔|f(x)|/||w||才是直观上的点到超平面的距离。  
 ![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/a0f22922-4354-442a-a6f7-badbcabb2407) ![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/6a504cff-1047-4c74-93dd-18ec934f9b1b)  
 ![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/40bcb04e-30aa-4c71-a053-52ac73b6f6fd)  
+5、循环神经网络  
+隐藏层上一时刻的输出值通过权重矩阵影响当前时刻的输出值：将输入和隐藏状态输入到全连接层和激活函数，产生当前输出值，并且再将当前输出值赋值给给下一隐藏状态  
+![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/af4ed96c-e4a9-469a-a518-ec47ad94192c)
+
+6、LSTM  
+![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/05271c2c-c209-4139-aa05-9ba5f57f6e86)  
+7、门控单元  
+![image](https://github.com/zhangwenjingustb/LookForWork/assets/141011729/03a33c54-75df-4044-bad1-a1600a33b2aa)  
+8、transformer  
+
+
+9、决策树  
+决策树的分裂依据是基尼系数或熵，基尼系数倾向于从树枝中分裂出最常见的类别，计算速度快；熵倾向于生成更平衡的树。  
+10、损失函数（目标函数、成本函数）  
+损失函数分为经验风险损失函数和结构风险损失函数。经验风险损失函数指预测结果和实际结果的差别，结构风险损失函数是指经验风险损失函数加上正则项。  
+交叉熵，衡量两个概率分布的差异  
+H(第i个元素真实值和预测值)=-(j=1到j=q求和)[y^i(下标j)]*log[y尖^i(下标j)]  
+交叉熵损失函数是H对于每个元素的平均值
+带尖的是预测概率分布
+补充知识：对于样本i，构造向量y(上标i)，第y(上标i)个元素为1，其余为0，只有索引为类别离散数值的这个元素为1  
+
+
+
+
+
 
 
 
